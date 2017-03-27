@@ -1,6 +1,6 @@
 body{
 
-	background-color: #D2DCE3;
+	background-color: #8DA9C4;
 	font-family: "Gothica"
 
 }
@@ -29,6 +29,7 @@ body{
 
 	font-size: 5vh;
 	height:100%;
+	color: white;
 
 
 }
@@ -72,6 +73,8 @@ body{
 .openingArea{
 	height: 60vh;
 	background-color: white;
+	padding:0;
+	margin:0;
 
 	
 
@@ -80,24 +83,76 @@ body{
 .profilePicArea{
 	height: 100%;
 	width:100%;
+	/*background-image: url("Users/Alexander_Potashnik/Desktop/GitHub_Projects/portfolio_page/images/portfolioPicture.png");*/
+	border:solid black;
+	display:flex;
+	padding:0;
+	margin:0;
 
-	background-image: url("../../images/portfolioPicture.jpg");
 }
+
+.row .col {
+
+	padding:0;
+
+}
+
+.images{
+
+	margin:0;
+	padding:0;
+
+}
+
+/*MAIN STRUCT*/
+
+.content{
+
+	height:100%;
+	margin:0;
+	padding:0;
+}
+
+.emptySpace{
+
+	
+	min-height:100%;
+
+}
+
+ .mainStructCenter{
+ 	height:100%;
+ 	background-color: #D2DCE3;
+ 	
+
+
+ }
 
 /*"ABOUT" CONTENT AREA*/
 
 .aboutContent{
 
 
-
+ 
 }
 
 .aboutArea{
 
-	text-align: center;
+	text-align: left;
+	font-size: 3vh;
+	border-bottom: solid #1B3B6F;
 
 
 }
+
+.quickFactsHeaders{
+	text-decoration: underline;
+	font-weight: bold;
+
+}
+
+
+
 
 /*ALL HEADERS FOR EACH AREA'S CONTENT*/
 
@@ -111,7 +166,58 @@ body{
 
 }
 
+/*RESUME AREA */
 
+.resumeFile{
+
+	height:60vh;
+	border: solid black;
+
+
+}
+
+.resumeArea{
+	border-bottom: solid #1B3B6F;
+
+
+}
+
+/*PROJECTS AREA*/
+
+.projectsHeaders{
+
+	font-size:3vh;
+
+
+
+}
+
+.projectContentHeaders{
+
+	/*text-decoration: underline;*/
+	font-weight: bold;
+	font-size: 1.5vh;
+
+}
+
+
+
+.footer{
+	height:5vh;
+	background-color: #1C7293;
+	margin: 0;
+	padding:0;
+	text-align: center;
+	vertical-align: center;
+
+
+}
+
+.footerArea{
+
+	color: white;
+
+}
 
 
 
