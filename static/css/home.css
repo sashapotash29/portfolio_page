@@ -1,0 +1,55 @@
+body{
+
+	background-color: #D2DCE3;
+
+
+}
+
+/*NAV RELATED*/
+
+.navBarStuff{
+
+	background-color: #1C7293;
+
+
+}
+
+.navOptions{
+	height:6vh;
+	width:12vh;
+	margin:0;
+	padding:0;
+	color:#97BECD;
+	background-color: #1C7293;
+	border:none;
+
+}
+
+.navOptions:hover{
+	background-color: #97BECD;
+	color: #1C7293;
+
+
+}
+
+.navOptionsLi{
+
+	height:100%;
+
+
+}
+/*OPENING AREA BELOW NAV*/
+.openingArea{
+	height: 60vh;
+	background-color: white;
+
+
+}
+
+/*"ABOUT" CONTENT AREA*/
+
+.aboutContent{
+
+
+
+}
