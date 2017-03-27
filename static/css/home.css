@@ -1,7 +1,7 @@
 body{
 
 	background-color: #D2DCE3;
-
+	font-family: "Gothica"
 
 }
 
@@ -10,18 +10,47 @@ body{
 .navBarStuff{
 
 	background-color: #1C7293;
+	height:10vh;
+	margin:0;
+	padding:0;
+
+
+}
+
+.logoCol{
+	text-align: center;
+	display:flex;
+	justify-content: center;
+
+
+}
+
+.logoName{
+
+	font-size: 5vh;
+	height:100%;
+
+
+}
+
+.navSpacing{
+
+	height:100%;
+	margin:0;
+	padding:0;
 
 
 }
 
 .navOptions{
-	height:6vh;
-	width:12vh;
+	height:100%;
+	width:100%;
 	margin:0;
 	padding:0;
 	color:#97BECD;
 	background-color: #1C7293;
 	border:none;
+	font-size: 4.5vh;
 
 }
 
@@ -39,11 +68,20 @@ body{
 
 }
 /*OPENING AREA BELOW NAV*/
+
 .openingArea{
 	height: 60vh;
 	background-color: white;
 
+	
 
+
+}
+.profilePicArea{
+	height: 100%;
+	width:100%;
+
+	background-image: url("../../images/portfolioPicture.jpg");
 }
 
 /*"ABOUT" CONTENT AREA*/
@@ -53,3 +91,32 @@ body{
 
 
 }
+
+.aboutArea{
+
+	text-align: center;
+
+
+}
+
+/*ALL HEADERS FOR EACH AREA'S CONTENT*/
+
+ 
+.contentHeader{
+	font-size: 6vh;
+	text-align: center;
+	text-decoration: underline;
+	font-weight: bold;
+
+
+}
+
+
+
+
+
+
+
+
+
+
