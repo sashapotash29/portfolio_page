@@ -3,11 +3,12 @@
 
 
 <html>
-	<header>
+	<head>
 		<title> Alexander's Portfolio Page</title>
+		<link rel='icon' href="../static/images/portfolioPicture.png"/>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/css/materialize.min.css">
 		<link rel="stylesheet" href="../static/css/home.css">
-	</header>
+	</head>
 
 
 	<body>
@@ -19,41 +20,166 @@
 
 			</div>
 			<div class="col s2 navSpacing">
-				<input class="navOptions" type="submit"  value="About"></input>
+				<input id="aboutButton" class="navOptions" type="submit"  value="About"></input>
 			</div>
 			<div class="col s2 navSpacing">
-				<input class="navOptions" type="submit" value="Resume"></input>
+				<input id="resumeButton" class="navOptions" type="submit" value="Resume"></input>
 			</div>
 			<div class="col s2 navSpacing">
-				<input class="navOptions" type="submit" value="Code Examples"></input>
+				<input id="codeButton" class="navOptions" type="submit" value="Coding Projects"></input>
 			</div>			
 		</div>
 
 		<div class="row openingArea">
 			<div class="col s12 profilePicArea">
-				<img href="../images/portfolioPicture.jpg" height="100%" width="100%">
+				<img class="images" src="../static/images/portfolioPicture.png" height="100%" width="30%" alt="profilePic">
+				<img  class="images" src="../static/images/portfolioPicture2.jpg" height="100%" width="70%" alt="profilePic">
 			</div>
 		</div>
-			<div class="row content">
 
+		<div class="row content">
+			<div class="col s2 emptySpace"> </div>
+			<div class="col s8 mainStructCenter">
 				<div class="row aboutContent">
 					<div class="col s2 emptySpace"> </div>
-					<div class="col s8 aboutArea">
-						<span class="contentHeader">About</span>
+					<div class="col s8 aboutArea" id="aboutSpace">
+						<h3 class="contentHeader">About</h3>
+
+						<span style="font-weight:bold;">Brief Summary: </span> 
+								<span>
+									My name is Alexander Potashnik and I was born in New York City. I have academic experience in Economics and Finance from both college and graduate school. Currently, I work for Byte Academy as a Teacher's Assistant, teaching students full stack development. 
+								</span>
 						<ul>
 							<li>
-								<span style="font-weight:bold;">Brief Summary: </span> 
-								<span>
-									My name is Alexander Potashnik and I was born in New York City. I have academic experience in Economics and Finance from both college and graduate school. 
-								</span>
+								<span class="quickFactsHeaders" style="font-weight:bold;">Age:</span> <span> 23</span>
+							</li>
+							<li>
+								<span class="quickFactsHeaders" style="font-weight:bold;">City of Resdence:</span> <span> New York City</span>
+							</li>
+							<li>
+								<span class="quickFactsHeaders" style="font-weight:bold;">Programming Languages:</span> <span> Python, PostgreSQL, VBA, JavaScript, HTML, CSS</span>
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<span class="quickFactsHeaders" style="font-weight:bold;">Phone #:</span> <span> +1 (917) 528-0492</span>
+							</li>
+							<li>
+								<span class="quickFactsHeaders" style="font-weight:bold;">Email:</span> <span> sashapotash29@gmail.com</span>
+							</li>
+							<li>
+								<span class="quickFactsHeaders" style="font-weight:bold;">LinkedIn:</span> <a href="http://www.linkedin.com/in/alexanderpotashnik" target="_blank"> Click Here</a>
+							</li>
+							<li>
+								<span class="quickFactsHeaders" style="font-weight:bold;">GitHub:</span> <a href="https://github.com/sashapotash29" target="_blank"> Click Here</a>
 							</li>
 						</ul>
 					</div>
-					<div class="col s2 emptySpace"> </div>
+					<div class="col s2"> </div>
 				</div>
 
+				<div class="row resumeContent">
+					<div class="col s2"> </div>
+					<div class="col s8 resumeArea" id="resumeSpace">
+						<h3 class="contentHeader">Resume</h3>
+						<embed class="resumeFile" src="../static/images/resume.pdf" width="100%" height="100%"/>
+					</div>
+					<div class="col s2"> </div>
+				</div>
 
+				<div class="row projectsContent" id="projectSpace">
+					<div class="col s2"> </div>
+					<div class="col s8 projectsArea">
+						<h3 class="contentHeader">Projects</h3>
+						<ul>
+							<li>
+								<span class="projectsHeaders" style="font-weight:bold;">RealVest</span>
+								<ul>
+									<li>
+										<span class="projectContentHeaders" style="font-weight:bold;">Technologies:</span>
+										<span> Python, Flask, PostgreSQL, SQLAlchemy, HTML, JavaScript, and Materialize </span>
+									</li>
+									<li>
+										<span class="projectContentHeaders" style="font-weight:bold;">Data Source:</span>
+										<span> Zillow API, Google Maps API </span>
+									</li>
+									<li>
+										<span class="projectContentHeaders" style="font-weight:bold;">Project Descripition: </span>
+										<span> RealVest is a web application aimed at allowing individuals to invest into luxury apartments through pooling of funds. With the benefits of combined capital, the average investor can participate in the luxury real estate investment community.</span>
+									</li>
+									<li>
+										<span class="projectContentHeaders" style="font-weight:bold;">GitHub Link: </span>
+										<a target="_blank" href="https://github.com/sashapotash29/re_investor_app"> RealVest - GitHub Page </a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<span class="projectsHeaders" style="font-weight:bold;">Pulse</span>
+								<ul>
+									<li>
+										<span class="projectContentHeaders" style="font-weight:bold;">Technologies:</span>
+										<span> Python, Django, PostgreSQL, D3/C3, BeautifulSoup4, Pandas, Digital Ocean, HTML, JQuery, Bootstrap, and Celery </span>
+									</li>
+									<li>
+										<span class="projectContentHeaders" style="font-weight:bold;">Data Sources:</span>
+										<span> Yahoo Finance, Twitter RSS Feed, Google News RSS Feed </span>
+									</li>
+									<li>
+										<span class="projectContentHeaders" style="font-weight:bold;">Project Descripition: </span>
+										<span> Pulse is a web application dedicated to allowing investors view historical stock price data while simultaneously being informed of relevant social activity. To paint a broad picture of the social environment, Pulse provides news articles from reputable financial news sources as well as Tweets from financial professionals Twitter feed. Before you make a decision, be sure to check the Pulse.</span>
+									</li>
+									<li>
+										<span class="projectContentHeaders" style="font-weight:bold;">Page Link: </span>
+										<a target="_blank" href="http://www.checkthepulse.today"> Pulse - Home </a>
+									</li>
+									<li>
+										<span class="projectContentHeaders" style="font-weight:bold;">GitHub Link: </span>
+										<a target="_blank" href="https://github.com/sashapotash29/pulse"> Pulse - GitHub Page </a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<span class="projectsHeaders" style="font-weight:bold;">KeyNote</span>
+								<ul>
+									<li>
+										<span class="projectContentHeaders" style="font-weight:bold;">Technologies:</span>
+										<span> Python, Flask, SQLAlchemy, SQLite3, Pandas, JavaScript, HTML, CSS, and C3/D3.js  </span>
+									</li>
+									<li>
+										<span class="projectContentHeaders" style="font-weight:bold;">Data Sources:</span>
+										<span> Yahoo Finance, Intrinio API, NewsAPI.org, Markit API </span>
+									</li>
+									<li>
+										<span class="projectContentHeaders" style="font-weight:bold;">Project Descripition: </span>
+										<span> KeyNote is a web application, closely inspired by <a href="https://www.motifinvesting.com/">MotifInvesting</a>, is a web application designed to allow investors create their own Exchange Traded Funds (ETFs) based on their own criteria and track its performance against the SP500 index. Users can view other investors' ETFs and modify to their own targets, risk profiles, and overall judgement.</span>
+									</li>
+									<li>
+										<span class="projectContentHeaders" style="font-weight:bold;">GitHub Link: </span>
+										<a target="_blank" href="https://github.com/wmunson/KeyNote"> KeyNote - GitHub Page </a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+
+					</div>
+				</div>
+				<div class="col s2"> </div>
 			</div>
+
+
+
+			<div class="col s2 emptySpace"> </div>
+		</div>
+
+		<div class="row footer">
+			<div class="col s12 footerArea">
+				Website Created by: Alexander Potashnik
+			</div>
+		</div>
+
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="../static/js/home.js"></script>
 
 	</body>
 </html>
